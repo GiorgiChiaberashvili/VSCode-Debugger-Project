@@ -14,7 +14,8 @@ return `Recycle Me!`
 */
 
 function shouldRecycle(item) {
-  if (!item.plastic) {
+
+  if (item.plastic) {
     return 'Recycle Me!'
   } else if (item.color === 'black') {
     return 'Currently, cannot be recycled.'
